@@ -30,6 +30,11 @@ if(BUILD_TESTING)
   )
 
   install(
+    DIRECTORY launch urdf models meshes worlds action config map
+    DESTINATION share/${PROJECT_NAME}
+  )
+
+  install(
     TARGETS tuck_arm_test
     DESTINATION share/${PROJECT_NAME}/test
   )
